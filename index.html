@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Client Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+        label {
+            margin-right: 10px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Electrical Client Questions</h1>
+
+    <form action="#" method="post">
+        
+        <h2>Power</h2>
+        <ul>
+            <li>
+                <label for="sockets">How many sockets do you require in each room?</label><br>
+                <input type="text" id="sockets" name="sockets">
+            </li>
+            <li>
+                <label for="special_equipment">Do you require any special equipment, e.g., interactive screen? If so, please indicate what the equipment is and the position you require it:</label><br>
+                <textarea id="special_equipment" name="special_equipment" rows="3"></textarea>
+            </li>
+        </ul>
+
+        <h2>Lighting</h2>
+        <ul>
+            <li>
+                <label for="lighting_controls">What lighting controls do you require in each room, e.g., local switching, presence dimming?</label><br>
+                <textarea id="lighting_controls" name="lighting_controls" rows="3"></textarea>
+            </li>
+            <li>
+                <label for="anti_ligature">Do you require anti-ligature fittings?</label><br>
+                <input type="checkbox" id="anti_ligature" name="anti_ligature"> Yes
+            </li>
+            <li>
+                <label for="vandal_resistant">Do you require vandal-resistant fittings?</label><br>
+                <input type="checkbox" id="vandal_resistant" name="vandal_resistant"> Yes
+            </li>
+        </ul>
+
+        <h2>Emergency Lighting</h2>
+        <ul>
+            <li>
+                <label for="escape_routes">What are the escape routes as defined in the escape strategy?</label><br>
+                <textarea id="escape_routes" name="escape_routes" rows="3"></textarea>
+            </li>
+        </ul>
+
+        <h2>Fire Alarm</h2>
+        <ul>
+            <li>
+                <label for="fire_alarm_maintenance">Do you have a maintenance agreement with anyone? If so, please provide the company name and contact details:</label><br>
+                <textarea id="fire_alarm_maintenance" name="fire_alarm_maintenance" rows="3"></textarea>
+            </li>
+            <li>
+                <label for="fire_alarm_linking">If we are providing a new building, does the new fire alarm require linking to the existing fire alarm?</label><br>
+                <input type="checkbox" id="fire_alarm_linking" name="fire_alarm_linking"> Yes
+            </li>
+            <li>
+                <label for="fire_alarm_make_model">What is the make and model of your existing fire alarm panel?</label><br>
+                <input type="text" id="fire_alarm_make_model" name="fire_alarm_make_model">
+            </li>
+            <li>
+                <label for="fire_alarm_existing_link">Does the fire alarm need linking to an existing fire alarm?</label><br>
+                <input type="checkbox" id="fire_alarm_existing_link" name="fire_alarm_existing_link"> Yes
+            </li>
+            <li>
+                <label for="fire_alarm_monitoring">Does the fire alarm need off-site monitoring?</label><br>
+                <input type="checkbox" id="fire_alarm_monitoring" name="fire_alarm_monitoring"> Yes
+            </li>
+        </ul>
+
+        <h2>Data</h2>
+        <ul>
+            <li>
+                <label for="data_maintenance">Do you have a maintenance agreement with anyone? If so, please provide the company name and contact details:</label><br>
+                <textarea id="data_maintenance" name="data_maintenance" rows="3"></textarea>
+            </li>
+            <li>
+                <label for="data_points">What data points do you require, e.g., number of desk-level data outlets and high-level outlets for Wi-Fi routers?</label><br>
+                <textarea id="data_points" name="data_points" rows="3"></textarea>
+            </li>
+            <li>
+                <label for="data_points_each_room">How many data points do you require in each room?</label><br>
+                <input type="text" id="data_points_each_room" name="data_points_each_room">
+            </li>
+            <li>
+                <label for="other_data_systems">Do you require data points for any other systems, e.g., door entry systems?</label><br>
+                <textarea id="other_data_systems" name="other_data_systems" rows="3"></textarea>
+            </li>
+        </ul>
+
+        <h2>Door Entry</h2>
+        <ul>
+            <li>
+                <label for="door_entry_extending">Do you have an existing door entry system that needs extending? If so, who is the provider?</label><br>
+                <textarea id="door_entry_extending" name="door_entry_extending" rows="3"></textarea>
+            </li>
+            <li>
+                <label for="door_entry_description">Please write a brief description of how you would like the door entry system to work. E.g., do you require fob readers internally and externally, or do you require push-to-exit buttons?</label><br>
+                <textarea id="door_entry_description" name="door_entry_description" rows="3"></textarea>
+            </li>
+            <li>
+                <label for="doors_securing">Which doors require securing via the door entry system?</label><br>
+                <textarea id="doors_securing" name="doors_securing" rows="3"></textarea>
+            </li>
+            <li>
+                <label for="reception_control">Do you require control of any of the doors via reception?</label><br>
+                <input type="checkbox" id="reception_control" name="reception_control"> Yes
+            </li>
+            <li>
+                <label for="automatic_doors">Do you have any requirements for automatic doors or electrically assisted doors?</label><br>
+                <textarea id="automatic_doors" name="automatic_doors" rows="3"></textarea>
+            </li>
+        </ul>
+
+        <h2>Security Alarm</h2>
+        <ul>
+            <li>
+                <label for="security_alarm">Do you require a security alarm?</label><br>
+                <input type="checkbox" id="security_alarm" name="security_alarm"> Yes
+            </li>
+            <li>
+                <label for="security_alarm_monitoring">Does it require monitoring?</label><br>
+                <input type="checkbox" id="security_alarm_monitoring" name="security_alarm_monitoring"> Yes
+            </li>
+            <li>
+                <label for="security_alarm_extending">Does the existing security alarm need extending?</label><br>
+                <input type="checkbox" id="security_alarm_extending" name="security_alarm_extending"> Yes
+            </li>
+            <li>
+                <label for="security_alarm_make_model">If so, what is the make and model of the existing security alarm?</label><br>
+                <input type="text" id="security_alarm_make_model" name="security_alarm_make_model">
+            </li>
+        </ul>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
